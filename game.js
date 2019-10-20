@@ -66,7 +66,7 @@ function playGame() {
     let playerCharacter;
     
     playerCharacter = new pC(document.getElementById('name').value, document.getElementById('lastname').value, Number(document.getElementById('HP').value) ?  document.getElementById('HP').value : 32)
-    Number(document.getElementById('HP').value) ? true : document.querySelector('#messages').insertAdjacentHTML('afterbegin', 'HP modifier invalid. We used a default value 32 instead.')
+    Number(document.getElementById('HP').value) ? true : document.querySelector('#messages').insertAdjacentHTML('afterbegin', 'HP modifier invalid. We used a default value <health>32</health> instead.')
     console.log(playerCharacter.currentHP)
     document.querySelector('#starter').insertAdjacentHTML('afterend', '<br>')
     document.querySelector('#starter').remove()
