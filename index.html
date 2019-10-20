@@ -13,17 +13,18 @@
             <br>
             <div class="jumbotron" id="interface">
                 <h3 class="display-6" id="header">What is Your Name?</h3>
-                <div id="starter">
+                <form id="starter" onsubmit="playGame()">
                     <br>
-                    <input id ="name" class="form-control" placeholder="First Name">
+                    <input id ="name" class="form-control" placeholder="First Name" required>
                     <br>
-                    <input id ="lastname" class="form-control" placeholder="Last Name">
+                    <input id ="lastname" class="form-control" placeholder="Last Name" required>
                     <br>
-                    <input id ="HP" class="form-control" placeholder="HP Modifier"> 
-                </div>
-                <br>
+                    <input id ="HP" class="form-control" placeholder="HP Modifier" required>
+                    <br>
+                    <input type ="submit" id="submit" class="btn btn-success" value="Submit">
+                </form>
                 <div id="buttons">
-                    <button id="submit" class="btn btn-success" onclick="playGame()">Submit Name</button>
+                    
                 </div>
             </div>
 

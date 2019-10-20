@@ -12,7 +12,7 @@ function getRandomIntInclusive(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 }
 
-
+//document.querySelector('#submit').addEventListener('click', playGame)
 
 
 
@@ -67,6 +67,7 @@ function playGame() {
     
     playerCharacter = new pC(document.getElementById('name').value, document.getElementById('lastname').value, Number(document.getElementById('HP').value))
     console.log(playerCharacter.currentHP)
+    document.querySelector('#starter').insertAdjacentHTML('afterend', '<br>')
     document.querySelector('#starter').remove()
     interimPeriod()
     
